@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" >
+    <title>List of Students</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Add Students</h1>
+    <form th:action="@{/add/action}" method="post" th:object="${student}">
+        <div>
+            <label>Input name</label>
+            <input type="text" th:field="*{name}">
+        </div>
+        <div>
+            <label>Input age</label>
+            <input type="number" th:field="*{age}">
+        </div>
+        <div>
+            <label>Input phone</label>
+            <input type="text" th:field="*{phone}">
+        </div>
+        <button type="submit" >Add</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

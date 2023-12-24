@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- JS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled JavaScript library -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="alert alert-success alert-dismissible fade show" style="display:none;" id="alert">
+            <strong>Success alert!</strong>
+            <button type="button" class="close" onclick="closeAlert()">
+                ×
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://media.geeksforgeeks.org/wp-content/uploads/20190506125816/avt.png"
+                alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">
+                    Author Name
+                </h5>
+                <p class="card-text">
+                    Passionate about programming.
+                </p>
+
+                <a href="#" class="btn btn-outline-secondary" onclick="showAlert()">
+                    See Profile
+                </a>
+            </div>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <div style="width: 10%;margin-right: -3.5%;">
+                <div class="dropdown" style="width: 100%;">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" style="border-bottom-right-radius: 0px; border-top-right-radius: 0px;">
+                        All
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            Data Structure
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            Algorithm
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            Operating System
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            Computer Networks
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 80%">
+                <input type="text" style="width: 100%; height: 100%;" placeholder="Input product to search">
+            </div>
+            <div style="width: 10%">
+                <button class="btn" style="background-color: lightsalmon;border-bottom-left-radius: 0px; border-top-left-radius: 0px;"><i class="fa fa-search"></i></button>
+            </div>  
+        </div>
+
+    </div>
+</body>
+<script>
+    function showAlert() {
+        document.getElementById("alert").style.display = 'inline';
+    }
+    function closeAlert() {
+        document.getElementById("alert").style.display = 'none';
+    }
+</script>
+
+</html>

@@ -1,0 +1,10 @@
+// Tao 1 class hoc sinh quán ly ID, tên, ngày tháng nam sinh, quê quán, lóp, giói tinh, VI thuòc tinh la diém toán, diém ly, diém hóa._
+// viet phurong thic xép loai cua hoc sinh dura vão diém trung binh cúa 3 môn 
+// dua trên diém 3 môn neu nhu có 1 môn bat ky trên 9.5 thi dánh giá hoc sinh dó thuõe chuyên môn dó.
+
+
+
+Tạo 1 class sản phẩm quản lý id, tên, loại, nơi sản xuất, ngày nhập vào (ngày thực tế) , giá tiền
+Đối với ngày thực tế thì khi tạo đối tượng sản phẩm ngày nhập vào là phải đúng với ngày mình khởi tạo 1 đối
+tượng sản phẩm
+Nếu có thể thì khởi tạo toàn bộ bằng cấp nhập vào thủ công chứ không nhập sẵn 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cssCodevn6.css">
+    <style>
+        .tuan {
+            color: red;
+        }
+
+        #tuan_hello {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1 id="cuong_hello" >HELLO TUAN CUI</h1>
+    <p>
+        tuan ngu vai biu
+    </p>
+    <a href="https://www.facebook.com/trongtuan.hoang.3958">
+        Thong tin cua tuan
+    </a>
+    <div>
+        <button type="button" class="btn_15" onclick="changeWindow()">Thong tin cua tuan</button>
+
+    </div> -->
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="name" />
+                <input type="password" placeholder="password" />
+                <input type="text" placeholder="email address" />
+                <button>create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+            <form class="login-form">
+                <img style="width: 120px; height: 120px;" src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2020/03/thien-nhien-2020-rung-dua-nuoc.jpg" >
+                <input type="text" placeholder="username" />
+                <input type="password" placeholder="password" />
+                <input type="text" placeholder="username" />
+                <input type="password" placeholder="password" />
+                <button>login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    // function changeWindow(){
+    //     location.assign("https://www.facebook.com/trongtuan.hoang.3958")
+    // }
+    $('.message a').click(function () {
+        $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+    });
+</script>
+
+</html>

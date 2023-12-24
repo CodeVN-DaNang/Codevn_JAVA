@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" >
+    <title>EDIT</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <button>
+            <a th:href="@{/index}">back to list</a>
+        </button>
+    </div>
+    <h1>Edit Student</h1>
+    <form th:action="@{/edit}"   >
+        <h2>EDIT</h2>
+        <h4 th:test="${message}"></h4>
+        <div style="display: none;">
+            <input type="text" th:field="*{idStudent}" th:value="${student.idStudent}">
+        </div>
+        <div>
+            <input type="text" th:field="*{nameStudent}" th:value="${student.nameStudent}">
+        </div>
+        <div>
+            <input type="text" th:field="*{email}" th:value="${student.email}">
+        </div>
+        <div>
+            <input type="number" th:field="*{phone}" th:value="${student.phone}">
+        </div>
+        <div>
+            <input type="number" th:field="*{mark}" th:value="${student.mark}">
+        </div>
+        <div>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>

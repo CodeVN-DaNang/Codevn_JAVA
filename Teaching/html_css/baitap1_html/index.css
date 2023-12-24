@@ -1,0 +1,48 @@
+.body{
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+}
+.title{
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+.image-content{
+    background-color: grey;
+    text-align: center;
+    width: 100%;
+    height: 35vmax;
+}
+.image-title{
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 30%;
+    color: white;
+}
+.content-title{
+    font-size: large;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+.main-content{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: lightgrey;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: aqua;
+    color: white;
+    border-radius: 4px;
+    box-shadow: none;
+    border: 0px;
+}
+.btn:hover{
+    background-color: whitesmoke;
+    color: aqua;
+}

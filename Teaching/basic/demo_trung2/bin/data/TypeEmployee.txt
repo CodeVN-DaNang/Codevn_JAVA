@@ -1,0 +1,5 @@
+1,IT software,2000
+2,Banker,300
+3,Worker,1000
+4,Chef,500
+5,Barber,200

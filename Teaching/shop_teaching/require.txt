@@ -1,0 +1,9 @@
+Viết 1 chương trình quản lí sinh viên có những class sau : 
+1.	Class student có các thuộc tính tên, lớp, ngày tháng năm sinh, giới tính, số điện thoại, email, địa chỉ.
+2.	Class lớp lưu tên, loại (lớp chuyên, thường)
+3.	Class Giáo viên có các thuộc tính tên, môn, ngày tháng năm sinh, giới tính, số điện thoại, email, địa chỉ.
+4.	ở folder repository viết 3 repo( mỗi class sẽ có 1 repo) ở service mọi người thưucj hiện việc kiểm tra dữ liệu nhập vào 
+(Nếu rỗng thì không cho thêm vào trong repo) ở controller mọi người thực hiện in ra chức năng menu và thêm mới học sinh, thêm 
+mới giáo viên, tìm kiếm học sinh, tìm kiếm giáo viên 
+-	Đối với học sinh thì tìm kiếm theo lớp hoặc loại lớp,
+-	Đối với giáo viên thì tìm kiếm theo môn học mà giáo viên dậy

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo login</title>
+    <link rel="stylesheet" src="../static/message.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</head>
+
+<body>
+    <h1>Hello <a th:text="${user.username}"></a></h1>
+    <form th:action="@{/logout}" method="get">
+        <button type="submit">Logout</button>
+    </form>
+    <form th:action="@{/__${idBox}__/send}" method="post" style="display: flex;">
+        <div style="width: 10%;">
+            <div th:each="BoxMessage : ${boxMessageList}">
+                <button type="button"><a th:text="${BoxMessage.idBox}"
+                        th:href="@{/__${BoxMessage.idBox}__}"></a></button>
+            </div>
+        </div>
+        <div>
+            <div class="container" th:each="message : ${messageList}">
+                <img src="/w3images/bandmember.jpg" alt="Avatar">
+                <p th:text="${message.content}"></p>
+                <span class="time-right">11:00</span>
+            </div>
+            <div style="display: flex;">
+                <input type="text" name="message" style="width: 80%;">
+                <button type="submit">Send</button>
+            </div>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

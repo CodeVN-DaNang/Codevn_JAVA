@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" >
+    <title>List of Students</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <h1>List of Students</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Mark</th>
+                <th>type student</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="student, iterStat : ${studentList}">
+                <td th:text="${iterStat.index+1}"></td>
+                <td th:text="${student.nameStudent}"></td>
+                <td th:text="${student.mark}"></td>
+                <td th:text="${student.typeStudentId}"></td>
+                <td><button><a th:href="@{/view/__${student.idStudent}__}">view</a></button></td>
+                <td><button><a th:href="@{/delete/__${student.idStudent}__}">delete</a></button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button>
+            <a th:href="@{/add}">create</a>
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="./home_message.css" >
+    <title>Document</title>
+</head>
+<body>
+    <form th:action="@{/__${idBox}__/send}" method="post" style="display: flex;">
+        <div style="width: 10%;">
+            <div>
+                <button type="button"><a th:text="${BoxMessage.idBox}"
+                        th:href="@{/__${BoxMessage.idBox}__}"></a></button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="/w3images/bandmember.jpg" alt="Avatar">
+                <p th:text="${message.content}"></p>
+                <span class="time-right">11:00</span>
+            </div>
+            <div style="display: flex;">
+                <input type="text" name="message" style="width: 80%;">
+                <button type="submit">Send</button>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

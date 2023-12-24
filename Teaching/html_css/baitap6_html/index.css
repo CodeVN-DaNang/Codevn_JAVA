@@ -1,0 +1,30 @@
+.tuanngu1{
+    color: aqua;
+    border-bottom: 2px solid black;
+    height: 60px;
+}
+.tuanngu2{
+    text-align: center;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: bolder;
+    width: 48%;
+    padding-top: 45px;
+    margin-left: 28%;
+}
+.tuanngu3{
+    display: flex;
+    padding-top: 40px;
+}
+.tuanngu4{
+    background-color: aqua;
+    text-align: center;
+    width: 30%;
+    height: 20vmax;
+}
+.tuanngu5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    padding-top: 30%;
+}

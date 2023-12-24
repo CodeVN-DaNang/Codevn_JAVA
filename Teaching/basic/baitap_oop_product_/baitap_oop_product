@@ -1,0 +1,9 @@
+Viết 1 class sản phẩm có các thuộc tính: id, tên, 
+mã sản phẩm, ngày sản xuất, 
+ngày nhập, số lượng còn lại, giá bán. 
+Có các phương thức mua hàng 
+( Tham số truyền vào là số lượng mua nếu 
+không đủ thì thông báo là "Sản phẩm không đủ". 
+Nếu đủ số lượng mua thì in ra giá tiền cần phải 
+trả để mua sản phẩm đó) và phương thức in ra 
+thông tin của sản phẩm.

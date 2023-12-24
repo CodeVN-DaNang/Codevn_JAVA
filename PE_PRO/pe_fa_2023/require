@@ -1,0 +1,51 @@
+Title: 
+Develop Student Management OOP application with the following components and requirements.
+
+Requirements:
+
+1.	Define a class Student with the following attributes and methods:
+
+Attributes:
+•	id: Stores a unique ID to identify the student.
+•	name: Stores the name of the student.
+•	dateOfBirth: Stores the date of birth of the student.
+•	grades: Stores the grade of the student.
+•	email: Stores the email of the student.
+
+Methods:
+
+Constructors, getters, and setters.
+toString method to display student information.
+2.	Define the StudentList class that manages the list of students. StudentListView manages inputting and outputting information in the student list.
+
+Methods:
+a. Loads the list of students from a file named "students_input.txt" and stores it in a List<Student>. Display all students' information to the console.
+The format of the file "students_input.txt" is as follows:
+
+S1, John Doe, 01-01-2003, 85.5, johndoe@gmail.com
+S2, Jane Smith, 05-01-2002, 92.0, janesmith@gmail.com
+S3, Robert Johnson, 10-03-2001, 75.0, robertjohnson@gmail.com
+S4, Emily Brown, 15-12-2000, 77.5, emilybrown@gmail.com
+S5, Michael Wilson, 20-05-2004, 91.1, michaelwilson@gmail.com
+
+b. Adds a new student to the list, checking for a unique ID before adding it.
+Prompt the user to re-enter data if there are input errors:
+•	Incorrect real numbers for the grades attribute.
+•	Incorrect date format for dateOfBirth and lastExamDate attributes. The correct date format is: "dd-mm-yyyy".
+c. Search for a student based on the student's name.
+
+d. Delete a student based on the student's ID.
+
+e. List all students sorted in descending order by grades.
+
+3.Displays a menu of available functionalities for the user:
+
+1.	Load students from the file.
+2.	Add a new student.
+3.	Search for a student.
+4.	Delete a student.
+5.	List all students by grades.
+6.	Exit
+Abstract class Menu is provided.
+
+This project follows the same MVC pattern as in the original requirement, with the Student and StudentList classes serving as models, the StudentManager class as the controller, and the StudentListView and Menu as the view. Additional classes can be added optionally for more functionality if needed

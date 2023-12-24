@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" >
+    <title>Add</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <button>
+            <a th:href="@{/index}">back to list</a>
+        </button>
+    </div>
+    <h1>Add of Students</h1>
+    <form th:action="@{/addProduct/add}" th:method="post" th:object="${product}" >
+        <h2>ADD</h2>
+        <h4 th:test="${message}"></h4>
+        <div>
+            <input type="text" th:field="*{productCode}">
+        </div>
+        <div>
+            <select name="productCategoryId">
+                <option selected>Select category of product</option>
+                <option th:each="productCategory : ${productCategoriList}" th:text="${productCategory.productCategoryName}" th:value="${productCategory.productCategoryId}" ></option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">submit</button>
+        </div>
+        <div>
+            <button type="reset">reset</button>
+        </div>
+    </form>
+    
+</body>
+</html>

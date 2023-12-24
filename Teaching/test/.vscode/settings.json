@@ -1,0 +1,7 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "rsp-ui.enableStartServerOnActivation": [
+        
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
+}

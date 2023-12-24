@@ -1,0 +1,4 @@
+các class chính nằm ở folder entity
+các class chứa các hàm xử lý với dữ liệu ví dụ như lưu xuống file txt hoặc đọc từ file txt thì nằm trong repository
+các class chauws các hàm xử lý thuật toán như kiểm tra regex, tính toán thì nằm ở service
+các class dùng để tương tác với view thì nằm ở controller
