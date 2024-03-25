@@ -1,0 +1,18 @@
+Viết chương trình quản lý sản phẩm có bao gồm loại
+sản phẩm với mã sản phẩm.
+hàm 1: Hàm thêm mới một sản phẩm với điều kiện
+là mã sản phẩm chưa tồn tại trong danh sách
+hàm 2: Hàm xoá với nhập vào mã sản phẩm để tìm
+ra sản phẩm muốn xoá (yêu cầu hỏi là muốn xoá hay không)
+hàm 3: Hàm chỉnh sửa với nhập vào mã sản phẩm
+để tìm ra sản phẩm muốn chỉnh sửa (Nếu phần
+tử chỉnh sửa để trống thì giữ nguyên giá trị)
+hàm 4: tìm kiếm theo loại sản phẩm hoặc tìm
+kiếm theo mã sản phẩm (Chọn thể loại search)
+hàm 5: In ra toàn bộ danh sách sản phẩm
+hàm 6: thoát chương trình
+
+
+1,2,3,4,5
+
+1,2,4,5

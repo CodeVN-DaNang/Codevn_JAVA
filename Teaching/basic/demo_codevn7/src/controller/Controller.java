@@ -13,6 +13,7 @@ public class Controller {
 
     public static void main(String[] args) {
         while (true) {
+            
             System.out.println("----MENU----\n"
                     + "1. Add new employee\n"
                     + "2. Delete employee\n"

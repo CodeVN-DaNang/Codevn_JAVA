@@ -12,18 +12,16 @@
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Mark</th>
                 <th>type student</th>
             </tr>
         </thead>
         <tbody>
-            <tr th:each="student, iterStat : ${studentList}">
+            <tr th:each="student, iterStat : ${students}">
                 <td th:text="${iterStat.index+1}"></td>
-                <td th:text="${student.nameStudent}"></td>
-                <td th:text="${student.mark}"></td>
-                <td th:text="${student.typeStudentId}"></td>
-                <td><button><a th:href="@{/view/__${student.idStudent}__}">view</a></button></td>
-                <td><button><a th:href="@{/delete/__${student.idStudent}__}">delete</a></button></td>
+                <td th:text="${student.studentName}"></td>
+                <td th:text="${student.typeStudent.getTypeName()}"></td>
+                <td><button><a th:href="@{/view/__${student.studentId}__}">view</a></button></td>
+                <td><button><a th:href="@{/delete/__${student.studentId}__}">delete</a></button></td>
             </tr>
         </tbody>
     </table>

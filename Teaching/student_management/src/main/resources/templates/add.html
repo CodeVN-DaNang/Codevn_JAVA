@@ -1,44 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8" >
-    <title>Add</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <div>
-        <button>
-            <a th:href="@{/index}">back to list</a>
-        </button>
-    </div>
-    <h1>Add of Students</h1>
-    <form th:action="@{/add/addNew}" th:method="post" th:object="${student}" >
-        <h2>ADD</h2>
-        <h4 th:test="${message}"></h4>
-        <div>
-            <input type="text" th:field="*{nameStudent}">
-        </div>
-        <div>
-            <input type="text" th:field="*{email}">
-        </div>
-        <div>
-            <input type="number" th:field="*{phone}">
-        </div>
-        <div>
-            <input type="number" th:field="*{mark}">
-        </div>
-        <div>
-            <select name="TypeStudent" th:field="*{typeStudentId}" >
-                <option th:each=" type : ${typeStudentList}" th:text="${type.typeStudentName}" th:value="${type.typeStudentId}" ></option>
-            </select>
-        </div>
-        <div>
-            <button type="submit">submit</button>
-        </div>
-        <div>
-            <button type="reset">reset</button>
-        </div>
+    <form method="post" th:object="${student}">
+        Id: <input type="text" th:field="*{studentId}"/>
+        Name: <input type="text" th:field="*{studentName}"/>
+        <button type="submit">add</button>
     </form>
-    
 </body>
 </html>

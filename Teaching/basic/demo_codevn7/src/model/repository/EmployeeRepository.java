@@ -13,7 +13,7 @@ public class EmployeeRepository {
     public void read(){
         employeeList.clear();
         try {
-            FileReader fr = new FileReader("/Users/vannhat/Documents/NHATTV_JAVA/teaching/basic/demo_codevn7/src/data/employee.txt");
+            FileReader fr = new FileReader("/Users/vannhat/Documents/Codevn_JAVA/Teaching/basic/demo_codevn7/src/data/employee.txt");
             BufferedReader br = new BufferedReader(fr);
             String line;
             while ((line = br.readLine()) != null) {
@@ -34,7 +34,7 @@ public class EmployeeRepository {
 
     public void write(){
         try {
-            FileWriter fw = new FileWriter("/Users/vannhat/Documents/NHATTV_JAVA/teaching/basic/demo_codevn7/src/data/employee.txt");
+            FileWriter fw = new FileWriter("/Users/vannhat/Documents/Codevn_JAVA/Teaching/basic/demo_codevn7/src/data/employee.txt");
             String line = "";
             for (Employee employee : employeeList) {
                 line += employee.getId() + "," + employee.getName() + "," + employee.getEmail() + "," + employee.getPhone() +"\n";

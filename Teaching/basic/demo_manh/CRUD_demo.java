@@ -5,7 +5,55 @@ public class CRUD_demo {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        getAll();
+        int a = Integer.parseInt(sc.nextLine());
+        String b = sc.nextLine();
+        System.out.println(a + " and " + b);
+    }
+    
+    // delete many elements
+    public static void deleteMany(){
+        int amount = 0;
+        while (amount <= 0 || amount > nums.length) {
+            System.out.println("Input how many to delete: ");
+            amount = sc.nextInt();
+        }
+        for (int i = 0; i < amount; i++) {
+            deleteById();
+        }
+    }
+
+    // add at index
+    public static void addAtIndex(){
+        System.out.println("Input index to add:");
+        int index = sc.nextInt();
+        int[] b = new int[nums.length + 1];
+        for (int i = 0; i < b.length; i++) {
+            if (i < index) {
+                b[i] = nums[i];
+            } else if (i == index) {
+                System.out.println("Input num to add: ");
+                b[i] = sc.nextInt();
+            } else {
+                b[i] = nums[i-1];
+            }
+        }
+        nums = b;
+    }
+
+    // add many elements
+    public static void addMany(){
+        System.out.println("Input how many to add: ");
+        int amount = sc.nextInt();
+        int[] b = new int[nums.length + amount];
+        for (int i = 0; i < b.length; i++) {
+            if (i < nums.length) {
+                b[i] = nums[i];
+            } else {
+                System.out.println("Input num to add at " + i);
+                b[i] = sc.nextInt();
+            }
+        }
+        nums = b;
     }
 
     public static void getAll(){
