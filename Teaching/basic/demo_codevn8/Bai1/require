@@ -1,0 +1,20 @@
+Viết class sản phẩm có các thuộc tính sau:
+mã sản phẩm
+
+loại sản phẩm
+
+số lượng
+
+hãng sản xuất
+
+giá tiền
+
+hàm in ra thông tin sản phẩm
+Viết class main thực hiện các thao tác sau:
+thực hiện khởi tạo 2 sản phẩm với đầy đủ giá trị
+nhập vào số lượng mua và in ra màn hình tổng tiền cần 
+trả cho sản phẩm đã mua
+Nếu số lượng < giá trị nhập vào mua thì hiển thị ra 
+là không đủ
+Khi mua thành công thì thuộc tính “số lượng” phải 
+giảm đi theo số lượng nhập vào

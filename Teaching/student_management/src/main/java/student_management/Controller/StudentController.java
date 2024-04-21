@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import student_management.Model.entities.Student;
 import student_management.Model.entities.TypeStudent;
@@ -27,12 +28,14 @@ public class StudentController {
     @GetMapping(value = "/add")
     public String showAdd(Model model){
         model.addAttribute("student", new Student());
+        model.addAttribute("typeStudentList", studentService.getAllTypeStudents());
         return "/add";
     }
     // action add
     @PostMapping(value = "/add")
-    public String addAction(@ModelAttribute("student") Student student ,Model model){
-        student.setTypeStudent(new TypeStudent(1, "Hello cai lol ma"));
+    public String addAction(@ModelAttribute("student") Student student ,@RequestParam("typeStudent") int typeId ,Model model){
+        student.setTypeStudent(studentService.getTypeStudentById(typeId));;
+        System.out.println(typeId);
         studentService.addStudent(student);
         return "redirect:/student/add";
     }

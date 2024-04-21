@@ -9,6 +9,9 @@
     <form method="post" th:object="${student}">
         Id: <input type="text" th:field="*{studentId}"/>
         Name: <input type="text" th:field="*{studentName}"/>
+        <select name="typeStudent">
+            <option th:each="typeStudent : ${typeStudentList}" th:value="${typeStudent.typeId}" th:text="${typeStudent.typeName}"></option>
+        </select>
         <button type="submit">add</button>
     </form>
 </body>

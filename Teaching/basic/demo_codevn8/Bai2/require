@@ -1,0 +1,11 @@
+Viết 1 chương trình có class user với các thuộc tính:
+id
+tên
+ngày tháng năm sinh 
+sex
+quê quán
+sđt
+email
+Viết chương trình có các chức năng sau: 
+1. Thêm mới user (nhập vào từng giá trị của các thuộc tính)
+2. tìm kiếm user dựa trên 1 trong những thuộc tính
