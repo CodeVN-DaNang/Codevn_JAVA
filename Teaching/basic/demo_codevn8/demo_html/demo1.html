@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        .hung{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: aqua;">VLXX.COM</h1>
+        <h2 id="hello" style="color: blue;">VLXX.COM</h2>
+        <h3 id="hello" class="hello">VLXX.COM</h3>
+        <h4 class="hello">VLXX.COM</h4>
+        <h5 class="hung hello">VLXX.COM</h5>
+        <h6>VLXX.COM</h6>
+    </div>
+    <button style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 50%; border: solid 2px greenyellow;" onclick="hello()">Khanh</button>
+    <input style="width: 200px; height: 40px;" placeholder="Nhap so no cua Khanh" id="no"/>
+</body>
+<script>
+    let hello = (() => {
+        let no = document.getElementById("no").value;
+        alert("No "+no+" lam !!!");
+    }); 
+        
+    
+    
+</script>
+</html>

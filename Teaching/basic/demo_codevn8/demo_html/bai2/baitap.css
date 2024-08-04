@@ -1,0 +1,28 @@
+.tittle{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+.menu--content{
+    margin-left: 2%;
+}
+.content{
+    display:flex;
+    width: 100%;
+}
+.box{
+    width: 30%;
+    background-color:cadetblue;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    text-align: center;
+    height: 100px;
+    font-size: x-large;
+    color: aliceblue;
+    padding-top: 80px;
+}
