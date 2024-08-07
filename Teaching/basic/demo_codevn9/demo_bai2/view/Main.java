@@ -1,13 +1,14 @@
-package demo_bai2.view;
+package view;
 
-import demo_bai2.controller.PeopleController;
+import controller.HomeController;
 
 public class Main {
     public static void main(String[] args) {
-        PeopleController peopleController = new PeopleController();
+        HomeController homeController = new HomeController();
         while (true) {
-            peopleController.displayMenu();
+            homeController.displayMenu();
         }
+        
         
     }
 }

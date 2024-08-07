@@ -1,19 +1,18 @@
-package demo_bai2.model.entities;
+package model.entities;
+
 
 import java.util.ArrayList;
 
 public class Home {
     private int amountMembers;
-    private int homeNumber;
-    private ArrayList<Person> people;
+    private String homeNumber;
 
     public Home() {
     }
 
-    public Home(int amountMembers, int homeNumber, ArrayList<Person> people) {
+    public Home(int amountMembers, String homeNumber) {
         this.amountMembers = amountMembers;
         this.homeNumber = homeNumber;
-        this.people = people;
     }
 
     public int getAmountMembers() {
@@ -24,25 +23,17 @@ public class Home {
         this.amountMembers = amountMembers;
     }
 
-    public int getHomeNumber() {
+    public String getHomeNumber() {
         return homeNumber;
     }
 
-    public void setHomeNumber(int homeNumber) {
+    public void setHomeNumber(String homeNumber) {
         this.homeNumber = homeNumber;
-    }
-
-    public ArrayList<Person> getPeople() {
-        return people;
-    }
-
-    public void setPeople(ArrayList<Person> people) {
-        this.people = people;
     }
 
     @Override
     public String toString() {
-        return "Home [amountMembers=" + amountMembers + ", homeNumber=" + homeNumber + ", people=" + people + "]";
+        return "Home [amountMembers=" + amountMembers + ", homeNumber=" + homeNumber + "]";
     }
 
 }

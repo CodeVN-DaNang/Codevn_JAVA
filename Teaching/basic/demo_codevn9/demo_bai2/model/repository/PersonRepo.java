@@ -1,11 +1,13 @@
-package demo_bai2.model.repository;
+package model.repository;
+
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
 
-import demo_bai2.model.entities.Person;
+import model.entities.Person;
+
 
 public class PersonRepo {
 
@@ -23,7 +25,8 @@ public class PersonRepo {
                 int age = Integer.parseInt(arr[1]);
                 String job = arr[2];
                 String id = arr[3];
-                Person person = new Person(name, age, job, id);
+                String homeNumber = arr[4];
+                Person person = new Person(name, age, job, id, homeNumber);
                 people.add(person);
             }
             br.close();
@@ -37,7 +40,7 @@ public class PersonRepo {
             FileWriter fw = new FileWriter("/Users/vannhat/Documents/Codevn_JAVA/Teaching/basic/demo_codevn9/demo_bai2/data/dataPeople.txt");
             String line = "";
             for (Person person : people) {
-                line += person.getName() + "," + person.getAge() + "," + person.getJob() + "," + person.getId() + "\n";
+                line += person.getName() + "," + person.getAge() + "," + person.getJob() + "," + person.getId() + "," + person.getHomeNumber() + "\n";
             }
             fw.write(line);
             fw.close();
@@ -45,6 +48,8 @@ public class PersonRepo {
             System.out.println(e);
         }
     }
+
+   
 
     public ArrayList<Person> getAll(){
         read();

@@ -1,9 +1,12 @@
-package demo_bai2.model.service;
+package model.service;
+
 
 import java.util.ArrayList;
 
-import demo_bai2.model.entities.Person;
-import demo_bai2.model.repository.PersonRepo;
+import model.entities.Person;
+import model.repository.PersonRepo;
+
+
 
 public class PersonService {
     PersonRepo personRepo = new PersonRepo();
